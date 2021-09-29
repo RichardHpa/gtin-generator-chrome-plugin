@@ -1,0 +1,1 @@
+# gtin-generator-chrome-plugin

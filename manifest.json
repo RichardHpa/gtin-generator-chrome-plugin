@@ -1,7 +1,7 @@
 {
 	"name": "GTIN generator",
 	"description": "A chrome extension for generating random gtins",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"manifest_version": 3,
 	"permissions": ["storage", "activeTab", "scripting"],
 	"action": {
@@ -18,5 +18,9 @@
 		"32": "/images/barcode32.png",
 		"48": "/images/barcode48.png",
 		"128": "/images/barcode128.png"
-	}
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"options_page": "options.html"
 }

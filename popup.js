@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', documentEvents, false)
 
+chrome.storage.sync.get('type', ({ type }) => {
+	document.getElementById('gtinType').value = type
+})
+
 function documentEvents() {
 	document
 		.getElementById('generateGtinButton')
